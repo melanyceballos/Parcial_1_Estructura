@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Cotización de Envío</title>
+    <link rel="stylesheet" href="Styles/main.css">
+</head>
+<body>
+    <h1>  Calculadora de costo de envio  </h1>
+    <div class="Info">
+        <table class="datos_entrada">
+            <tr>
+                <td><label for="nombre">Nombre:</label></td>
+                <td><input type="text" id="nombre" placeholder="Ingrese su nombre"></td>
+            </tr>
+            <tr>
+                <td><label for="peso">Peso por paquete (Kg):</label></td>
+                <td><input type="number" id="peso" placeholder=" Ingrese el peso en kg "></td>
+            </tr>
+            <tr>
+                <td><label for="distancia">Distancia (km):</label></td>
+                <td><input type="number" id="distancia" placeholder="Ingrese la distancia"></td>
+            </tr>
+            <tr>
+                <td><label for="decuento">Codigo de descuento:</label></td>
+                <td><input type="number" id="decuento"  placeholder="Ingrese su codigo de descuento"></td>
+            </tr>
+        </table>
+        
+        <div>
+            <button onclick="calcularEnvio()">Calcular costo de envio</button>
+            
+        </div>
+        
+        <div style="width: 100%; display: flex; justify-content: center;">
+            <textarea id="calculo" placeholder="El calculo aparecerá aquí..." readonly></textarea>
+        </div>
+    <script src="Script/script.js"></script>
+</body>
+        

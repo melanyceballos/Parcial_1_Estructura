@@ -1,0 +1,43 @@
+body {
+    text-align: center;
+    background-color: rgb(224, 209, 221);
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    color: rgb(250, 37, 168);
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.laInfo{
+    display: flex;
+    flex-flow: column nowrap;    
+    
+}
+.datos_entrada{
+    background-color: #ffadfb;
+}
+
+table {
+    width: 500px;
+    margin: 20px auto;
+    padding: 5px auto;
+    border: 2px solid;
+}
+
+input {
+    margin: 5px;
+    padding: 5px;
+    background-color: white;
+}
+
+textArea {
+    width: 500px;
+    height: 100px;
+    
+}
+.error {
+    color: rgb(65, 1, 65);
+}
