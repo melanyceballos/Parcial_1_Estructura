@@ -34,14 +34,7 @@ function calcularEnvio() {
     const total = totalDescuento + impuesto;
 
     const calculo = document.getElementById('calculo');
-    calculo.value = `${nombre} debe pagar:\n` +
-        `Por peso: $${costoPeso.toLocaleString()}\n` +
-        ` Por distancia: $${costoDistancia.toLocaleString()}\n` +
-        `Subtotal: $${subTotal.toLocaleString()}\n` +
-        `Descuento aplicado: $${valorDescuento.toLocaleString()}\n` +
-        `Total con descuento: $${totalDescuento.toLocaleString()}\n` +
-        `Impuestos (8%): $${impuesto.toLocaleString()}\n` +
-        `Total final: $${total.toLocaleString()}`;
+    calculo.value = `${nombre} debe pagar:\n` + `Por peso: $${costoPeso.toLocaleString()}\n` + `Por distancia: $${costoDistancia.toLocaleString()}\n` + `Subtotal: $${subTotal.toLocaleString()}\n` + `Descuento aplicado: $${valorDescuento.toLocaleString()}\n` + `Total con descuento: $${totalDescuento.toLocaleString()}\n` + `Impuestos (8%): $${impuesto.toLocaleString()}\n` + `Total final: $${total.toLocaleString()}`;
     
     const envioObj = {
         nombre: nombre,
