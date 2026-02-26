@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="Styles/main.css">
 </head>
 <body>
-    <h1>  Calculadora de costo de envio  </h1>
+    <h1>Calculadora de costo de envío</h1>
     <div class="Info">
         <table class="datos_entrada">
             <tr>
@@ -16,26 +16,26 @@
             </tr>
             <tr>
                 <td><label for="peso">Peso por paquete (Kg):</label></td>
-                <td><input type="number" id="peso" placeholder=" Ingrese el peso en kg "></td>
+                <td><input type="number" id="peso" placeholder="Ingrese el peso en kg" step="0.1" min="0"></td>
             </tr>
             <tr>
                 <td><label for="distancia">Distancia (km):</label></td>
-                <td><input type="number" id="distancia" placeholder="Ingrese la distancia"></td>
+                <td><input type="number" id="distancia" placeholder="Ingrese la distancia" step="0.1" min="0"></td>
             </tr>
             <tr>
-                <td><label for="decuento">Codigo de descuento:</label></td>
-                <td><input type="number" id="decuento"  placeholder="Ingrese su codigo de descuento"></td>
+                <td><label for="descuento">Código de descuento:</label></td>
+                <td><input type="text" id="descuento" placeholder="Ingrese codigo de descuento"></td>
             </tr>
         </table>
         
-        <div>
-            <button onclick="calcularEnvio()">Calcular costo de envio</button>
-            
+        <div style="display: flex; justify-content: center; gap: 10px; margin: 20px 0;">
+            <button onclick="calcularEnvio()">Calcular costo de envío</button>
         </div>
         
         <div style="width: 100%; display: flex; justify-content: center;">
-            <textarea id="calculo" placeholder="El calculo aparecerá aquí..." readonly></textarea>
+            <textarea id="calculo" placeholder="El cálculo aparecerá aquí..." readonly rows="8" cols="50" style="width: 100%; padding: 10px;"></textarea>
         </div>
+    </div>
     <script src="Script/script.js"></script>
 </body>
-        
+</html>

@@ -61,24 +61,3 @@ function calcularEnvio() {
 }
 
 
-function mostrarTodosLosEnvios() {
-    const calculo = document.getElementById('calculo');
-    
-    if (envios.length === 0) {
-        calculo.value = 'No hay cálculos almacenados.';
-        return;
-    }
-    
-    let texto = '=== TODOS LOS COSTOS DE ENVIOS ===\n\n';
-    envios.forEach((item, index) => {
-        texto += `${index + 1}. ${item.nombre}\n` +
-            `Costo peso: $${item.costoPeso.toLocaleString()}\n` +
-            `Costo distancia: $${item.costoDistancia.toLocaleString()}\n` +
-            `Subtotal: $${item.subTotal.toLocaleString()}\n` +
-            `Descuento: $${item.valorDescuento.toLocaleString()}\n` +
-            `Total con descuento: $${item.totalDescuento.toLocaleString()}\n` +
-            `Impuesto: $${item.impuesto.toLocaleString()}\n` +
-            `TOTAL FINAL: $${item.total.toLocaleString()}\n\n`;
-    });
-    calculo.value = texto;
-}
