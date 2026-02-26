@@ -7,7 +7,7 @@ function calcularEnvio() {
     const descuento = document.getElementById('descuento').value;
     
     
-    if (!nombre || isNaN(peso) || isNaN(distancia) || !(descuento)) {
+    if (!nombre || isNaN(peso) || peso < 0 || isNaN(distancia) || distancia < 0|| (descuento)) {
         alert('Por favor complete todos los campos correctamente');
         return;
     }
